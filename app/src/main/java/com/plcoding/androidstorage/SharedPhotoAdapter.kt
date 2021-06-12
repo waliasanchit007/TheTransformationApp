@@ -1,4 +1,5 @@
-package com.plcoding.androidstorage
+package com.sanwal.thetransformationapp
+
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +7,7 @@ import androidx.constraintlayout.widget.ConstraintSet
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.plcoding.androidstorage.databinding.ItemPhotoBinding
+import com.sanwal.thetransformationapp.databinding.ItemPhotoBinding
 
 class SharedPhotoAdapter(
     private val onPhotoClick: (SharedStoragePhoto) -> Unit

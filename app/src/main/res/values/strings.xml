@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Android Storage</string>
+    <string name="app_name">The Tranformation App</string>
+    <string name="avc">AVC (H264)</string>
+    <string name="hevc">HEVC (H265)</string>
+    <string name="make_it">Make It!</string>
+    <string name="play_it">Play It!</string>
+    <string name="share_it">Share it!</string>
 </resources>

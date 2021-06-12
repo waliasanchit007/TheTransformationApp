@@ -1,4 +1,5 @@
-package com.plcoding.androidstorage
+package com.sanwal.thetransformationapp
+
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +7,8 @@ import androidx.constraintlayout.widget.ConstraintSet
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.plcoding.androidstorage.databinding.ItemPhotoBinding
+import com.bumptech.glide.Glide
+import com.sanwal.thetransformationapp.databinding.ItemPhotoBinding
 
 class InternalStoragePhotoAdapter(
     private val onPhotoClick: (InternalStoragePhoto) -> Unit
@@ -20,7 +22,7 @@ class InternalStoragePhotoAdapter(
         }
 
         override fun areContentsTheSame(oldItem: InternalStoragePhoto, newItem: InternalStoragePhoto): Boolean {
-            return oldItem.name == newItem.name && oldItem.bmp.sameAs(newItem.bmp)
+            return oldItem.name == newItem.name && oldItem.bmp?.sameAs(newItem.bmp) == true
         }
     }
 
@@ -37,19 +39,7 @@ class InternalStoragePhotoAdapter(
     override fun onBindViewHolder(holder: PhotoViewHolder, position: Int) {
         val photo = currentList[position]
         holder.binding.apply {
-            ivPhoto.setImageBitmap(photo.bmp)
-
-            val aspectRatio = photo.bmp.width.toFloat() / photo.bmp.height.toFloat()
-            ConstraintSet().apply {
-                clone(root)
-                setDimensionRatio(ivPhoto.id, aspectRatio.toString())
-                applyTo(root)
-            }
-
-            ivPhoto.setOnLongClickListener {
-                onPhotoClick(photo)
-                true
-            }
+            Glide.with(root).load(photo.bmp).into(ivPhoto)
         }
     }
 }

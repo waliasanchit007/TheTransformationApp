@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "86399170588",
+    "project_id": "the-transformation-app",
+    "storage_bucket": "the-transformation-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86399170588:android:f24e58c951897b23af07d9",
+        "android_client_info": {
+          "package_name": "com.sanwal.thetransformationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86399170588-ll76cchl7s6dludrbvhk6kovqmpa6q11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sanwal.thetransformationapp",
+            "certificate_hash": "66cec2a64a8febe70ec474eb6c4e8326ebf2926f"
+          }
+        },
+        {
+          "client_id": "86399170588-616oj4akunl5sejvtjvt796pipsrbik4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYpSERBc0WWgT9d5CIP5SZ3XIQt9D-Aa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86399170588-616oj4akunl5sejvtjvt796pipsrbik4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
